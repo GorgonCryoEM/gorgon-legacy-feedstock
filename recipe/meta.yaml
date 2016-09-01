@@ -7,7 +7,8 @@ build:
 
 source:
     git_url: https://github.com/GorgonCryoEM/Gorgon.git
-    git_tag: appveyor
+    git_tag: appveyor      # [win]
+    git_tag: non-appveyor  # [not win]
 
 requirements:
     build:
