@@ -1,0 +1,32 @@
+package:
+    name: gorgon-legacy
+    version: 2.3
+
+build:
+    number: 0
+    features:
+        - vc9    # [win and py27]
+        - vc10   # [win and py34]
+        - vc14   # [win and py35]
+
+source:
+    git_url: https://github.com/GorgonCryoEM/Gorgon.git
+    git_tag: appveyor
+
+requirements:
+    build:
+        - cmake >=3.4
+        - python
+        - boost
+        - fftw
+        - freeglut  # [not osx]
+    run:
+        - python
+        - boost
+        - fftw
+        - freeglut  # [not osx]
+        - pyqt
+        - pyopengl
+
+about:
+  summary: Gorgon, an interactive molecular modeling system
