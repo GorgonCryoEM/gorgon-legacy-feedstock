@@ -20,6 +20,7 @@ requirements:
         - boost
         - fftw
         - freeglut  # [not osx]
+        - setuptools
     run:
         - python
         - boost
