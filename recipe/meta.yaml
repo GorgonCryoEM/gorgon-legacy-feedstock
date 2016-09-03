@@ -26,6 +26,7 @@ requirements:
         - freeglut  # [not osx]
         - pyqt
         - pyopengl
+        - vs2015_runtime  # [win]
 
 about:
   summary: Gorgon, an interactive molecular modeling system
