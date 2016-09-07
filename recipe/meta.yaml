@@ -4,10 +4,6 @@ package:
 
 build:
     number: 0
-    features:
-        - vc9    # [win and py27]
-        - vc10   # [win and py34]
-        - vc14   # [win and py35]
 
 source:
     git_url: https://github.com/GorgonCryoEM/Gorgon.git
@@ -16,18 +12,21 @@ source:
 requirements:
     build:
         - cmake >=3.4
-        - python
-        - boost
+        - python 2.7.*
+        - boost         # [not win]
+        - boost-gorgon  # [win]
         - fftw
         - freeglut  # [not osx]
         - setuptools
     run:
-        - python
-        - boost
+        - python 2.7.*
+        - boost         # [not win]
+        - boost-gorgon  # [win]
         - fftw
         - freeglut  # [not osx]
         - pyqt
         - pyopengl
+        - vs2015_runtime  # [win]
 
 about:
   summary: Gorgon, an interactive molecular modeling system
