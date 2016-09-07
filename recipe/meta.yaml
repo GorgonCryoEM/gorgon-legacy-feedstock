@@ -17,13 +17,13 @@ source:
 requirements:
     build:
         - cmake >=3.4
-        - python
+        - python 2.7.*
         - boost
         - fftw
         - freeglut  # [not osx]
         - setuptools
     run:
-        - python
+        - python 2.7.*
         - boost
         - fftw
         - freeglut  # [not osx]
