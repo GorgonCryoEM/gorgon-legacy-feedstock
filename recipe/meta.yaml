@@ -3,6 +3,8 @@ package:
     version: 2.2.3
 
 build:
+    features:
+      - vc10            #   [win and py27]
     number: 0
 
 source:
