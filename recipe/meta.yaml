@@ -7,7 +7,7 @@ build:
 
 source:
     git_url: https://github.com/GorgonCryoEM/Gorgon-legacy.git
-    git_tag: release/v2.3
+    git_tag: release/v2.3.1
 
 requirements:
     build:
