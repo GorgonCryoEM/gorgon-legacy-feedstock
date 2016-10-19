@@ -14,28 +14,22 @@ Summary: Gorgon, an interactive molecular modeling system
 Installing gorgon-legacy
 ========================
 
-Installing gorgon-legacy from the GorgonCryoEM channel can be achieved by adding GorgonCryoEM to your channels with:
+Installing `gorgon-legacy` from the `gorgoncryoem` channel can be achieved by adding `gorgoncryoem` to your channels with:
 
 ```
-conda config --add channels GorgonCryoEM
+conda config --add channels gorgoncryoem
 ```
 
-Once the GorgonCryoEM channel has been enabled, gorgon-legacy can be installed with:
+Once the `gorgoncryoem` channel has been enabled, `gorgon-legacy` can be installed with:
 
 ```
 conda install gorgon-legacy
 ```
 
-Or gorgon-legacy can be installed with a single command:
+It is possible to list all of the versions of `gorgon-legacy` available on your platform with:
 
 ```
-conda install gorgon-legacy -c GorgonCryoEM
-```
-
-It is possible to list all of the versions of gorgon-legacy available on your platform with:
-
-```
-conda search gorgon-legacy --channel GorgonCryoEM
+conda search gorgon-legacy --channel gorgoncryoem
 ```
 
 
@@ -61,8 +55,8 @@ package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
-`GorgonCryoEM` channel, whereupon the built conda packages will be available for
-everybody to install and use from the `GorgonCryoEM` channel.
+`gorgoncryoem` channel, whereupon the built conda packages will be available for
+everybody to install and use from the `gorgoncryoem` channel.
 Note that all branches in the GorgonCryoEM/gorgon-legacy-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
